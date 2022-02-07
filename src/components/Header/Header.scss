@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  justify-content: center;
+  .header__content {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .header__left {
+      width: 10%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 50px;
+      }
+      h1 {
+        font-size: 21px;
+        font-weight: 600;
+      }
+    }
+    .header__right {
+      margin-right: 10px;
+      form {
+        width: 300px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 35px;
+        border-radius: 12px;
+        border: none;
+        -webkit-box-shadow: 0 0 10px #000000;
+        box-shadow: 0 0 10px #000000;
+        input {
+          width: 260px;
+          border: none;
+          font-family: "Nunito", sans-serif;
+        }
+        img {
+          width: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

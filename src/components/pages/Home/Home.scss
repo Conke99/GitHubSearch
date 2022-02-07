@@ -1,0 +1,379 @@
+.home {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .home__contnet {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .leftSide__home {
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border: 2px solid gray;
+      border-radius: 12px;
+      -webkit-box-shadow: 0 0 20px #000000;
+      box-shadow: 0 0 20px #000000;
+      img {
+        width: 50%;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 0 20px #909090;
+        box-shadow: 0 0 20px #909090;
+      }
+      h2 {
+        font-size: 26px;
+        font-weight: 600;
+      }
+      h3 {
+        font-size: 26px;
+      }
+      .follow {
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .follow__content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          width: 100px;
+          font-size: 18px;
+        }
+      }
+    }
+    .rightSide__home {
+      width: 50%;
+      height: 55vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .Overview {
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+        h5 {
+          font-size: 22px;
+          font-weight: 600;
+        }
+        h4 {
+          font-size: 22px;
+          font-weight: 600;
+        }
+        img {
+          width: 20px;
+        }
+      }
+
+      .line {
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 12px;
+      }
+      .projects {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 90%;
+        gap: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+        .project {
+          width: 45%;
+          height: 30%;
+          border: 2px solid gray;
+          border-radius: 12px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
+          background-color: whitesmoke;
+          text-align: center;
+          cursor: pointer;
+          .project__name {
+            font-weight: 600;
+            font-size: 18px;
+          }
+          p {
+            padding: 0 5px 0 5px;
+          }
+          .language {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 10px;
+            .circle {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background: rgb(102, 102, 102);
+            }
+          }
+        }
+        .project:hover {
+          background-color: #4b4b4b;
+          animation: coloChanger 1s;
+          border: 2px solid #4b4b4b;
+          p {
+            color: white;
+          }
+          .language {
+            p {
+              font-weight: 600;
+            }
+            .circle {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+  .home__bottom {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .home__bottom__content {
+      width: 90%;
+      height: 100%;
+      border-top: 2px solid #b8b8b8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .Repositories {
+        margin-top: 10px;
+        cursor: pointer;
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        h5 {
+          font-size: 22px;
+          font-weight: 600;
+        }
+        img {
+          width: 20px;
+        }
+      }
+      .latest__repo {
+        margin-top: 10px;
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .repo {
+          background-color: #4d4d4d;
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 80px;
+          h5 {
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+          }
+          .about__repo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 600px;
+            p {
+              color: white;
+            }
+            .date {
+              width: 190px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 12px;
+              background-color: #3e6800;
+            }
+            .Watchers {
+              width: 95px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 12px;
+              background-color: #b1021a;
+            }
+            .watchers_count {
+              width: 140px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 12px;
+              background-color: #0502b1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes coloChanger {
+  0% {
+    background-color: whitesmoke;
+  }
+  100% {
+    background-color: #4b4b4b;
+  }
+}
+
+@media only screen and (max-width: 1183px) {
+  .home {
+    .home__contnet {
+      .rightSide__home {
+        .projects {
+          .project {
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .home__bottom {
+      .home__bottom__content {
+        .Repositories {
+          h5 {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1079px) {
+  .home {
+    height: 200vh;
+    .home__contnet {
+      height: 120vh;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .rightSide__home {
+        width: 80%;
+        align-items: center;
+        .Overview {
+          width: 200px;
+        }
+        .line {
+          width: 100%;
+        }
+      }
+    }
+    .home__bottom {
+      height: 80vh;
+      .home__bottom__content {
+        .Repositories {
+          width: 200px;
+          justify-content: center;
+          h5 {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 847px) {
+  .home {
+    .home__bottom {
+      .home__bottom__content {
+        .latest__repo {
+          .repo {
+            h5 {
+              font-size: 16px;
+            }
+            .about__repo {
+              justify-content: space-evenly;
+              width: 500px;
+              .date {
+                width: 160px;
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .home {
+    .home__bottom {
+      .home__bottom__content {
+        .latest__repo {
+          .repo {
+            .about__repo {
+              width: 400px;
+              .Watchers {
+                width: 75px;
+              }
+              .watchers_count {
+                width: 120px;
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .home {
+    .home__bottom {
+      .home__bottom__content {
+        .latest__repo {
+          .repo {
+            h5 {
+              font-size: 14px;
+            }
+            .about__repo {
+              width: 350px;
+              .date {
+                width: 140px;
+              }
+
+              .watchers_count {
+                width: 100px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

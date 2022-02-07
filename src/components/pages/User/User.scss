@@ -1,0 +1,381 @@
+.user {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .user__content {
+    width: 90%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .leftSide__user {
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border: 2px solid gray;
+      border-radius: 12px;
+      -webkit-box-shadow: 0 0 20px #000000;
+      box-shadow: 0 0 20px #000000;
+      .about_user {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        justify-content: space-between;
+        .location_company {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          img {
+            width: 20px;
+          }
+        }
+        h3 {
+          font-size: 18px;
+        }
+      }
+      img {
+        width: 50%;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 0 20px #909090;
+        box-shadow: 0 0 20px #909090;
+      }
+      h2 {
+        font-size: 26px;
+        font-weight: 600;
+      }
+      h3 {
+        font-size: 26px;
+      }
+      .followers {
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .user__folow {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          width: 100px;
+          font-size: 18px;
+        }
+      }
+    }
+    .rightSide__user {
+      width: 50%;
+      height: 55vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .overview__user {
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+        h5 {
+          font-size: 22px;
+          font-weight: 600;
+        }
+        img {
+          width: 20px;
+        }
+      }
+      .user__line {
+        border: 1px solid rgb(184, 184, 184);
+        border-radius: 12px;
+      }
+      .user__projects {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 90%;
+        gap: 10px;
+        overflow: hidden;
+        overflow-y: scroll;
+        .user__project {
+          width: 45%;
+          height: 30%;
+          border: 2px solid gray;
+          border-radius: 12px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          box-shadow: 0 0 10px #000000;
+          background-color: whitesmoke;
+          cursor: pointer;
+          .user__project__name {
+            font-weight: 600;
+            font-size: 18px;
+          }
+          p {
+            padding: 0 5px 0 5px;
+          }
+          .user__language {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 10px;
+            .circle {
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background: rgb(219, 205, 2);
+            }
+          }
+        }
+        .user__project:hover {
+          background-color: #4b4b4b;
+          animation: coloChanger 1s;
+          border: 2px solid #4b4b4b;
+          p {
+            color: white;
+          }
+          .user__language {
+            p {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+  .user__bottom {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .user__bottom__content {
+      width: 90%;
+      height: 100%;
+      border-top: 2px solid #b8b8b8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .user__Repositories {
+        margin-top: 10px;
+        cursor: pointer;
+        width: 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        h5 {
+          font-size: 22px;
+          font-weight: 600;
+        }
+        img {
+          width: 20px;
+        }
+      }
+      .user__latest__repo {
+        margin-top: 10px;
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .user__repo {
+          background-color: #4d4d4d;
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 80px;
+          h5 {
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+          }
+          .user__about__repo {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 600px;
+            p {
+              color: white;
+            }
+            .user__date {
+              width: 190px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 12px;
+              background-color: #3e6800;
+            }
+            .user__watchers {
+              width: 95px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 12px;
+              background-color: #b1021a;
+            }
+            .user__watchers__count {
+              width: 140px;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 12px;
+              background-color: #0502b1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes coloChanger {
+  0% {
+    background-color: whitesmoke;
+  }
+  100% {
+    background-color: #4b4b4b;
+  }
+}
+
+@media only screen and (max-width: 1183px) {
+  .user {
+    .user__content {
+      .rightSide__user {
+        .user__projects {
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .user__bottom {
+      .user__bottom__content {
+        .user__Repositories {
+          width: 200px;
+          h5 {
+            font-size: 18px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1079px) {
+  .user {
+    height: 200vh;
+    .user__content {
+      height: 120vh;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .rightSide__user {
+        width: 80%;
+        align-items: center;
+        .overview__user {
+          width: 200px;
+        }
+        .user__line {
+          width: 100%;
+        }
+      }
+    }
+    .user__bottom {
+      height: 80vh;
+      .user__bottom__content {
+        .user__Repositories {
+          width: 200px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 847px) {
+  .user {
+    .user__bottom {
+      .user__bottom__content {
+        .user__latest__repo {
+          .user__repo {
+            h5 {
+              font-size: 16px;
+            }
+            .user__about__repo {
+              justify-content: space-evenly;
+              width: 500px;
+              .user__date {
+                width: 160px;
+              }
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .user {
+    .user__bottom {
+      .user__bottom__content {
+        .user__latest__repo {
+          .user__repo {
+            .user__about__repo {
+              width: 400px;
+              .user__watchers {
+                width: 75px;
+              }
+              .user__watchers__count {
+                width: 120px;
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .user {
+    .user__bottom {
+      .user__bottom__content {
+        .user__latest__repo {
+          .user__repo {
+            h5 {
+              font-size: 14px;
+            }
+            .user__about__repo {
+              width: 350px;
+              .user__date {
+                width: 140px;
+              }
+              .user__watchers__count {
+                width: 100px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
